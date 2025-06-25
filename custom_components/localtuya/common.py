@@ -19,7 +19,6 @@ from homeassistant.const import (
 from homeassistant.core import callback
 from homeassistant.helpers.dispatcher import (
     async_dispatcher_connect,
-    async_dispatcher_send,
     dispatcher_send,
 )
 from homeassistant.helpers.event import async_track_time_interval
@@ -413,7 +412,7 @@ class LocalTuyaEntity(RestoreEntity, pytuya.ContextualLogger):
         )
 
         signal = f"localtuya_entity_{self._dev_config_entry[CONF_DEVICE_ID]}"
-        async_dispatcher_send(self.hass, signal, self.entity_id)
+        dispatcher_send(self.hass, signal, self.entity_id)
 
     @property
     def extra_state_attributes(self):
