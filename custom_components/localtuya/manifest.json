@@ -1,11 +1,11 @@
 {
   "domain": "localtuya",
   "name": "LocalTuya integration",
-  "version": "5.2.2",
+  "version": "5.3.0",
   "documentation": "https://github.com/MaximumSU/localtuya/",
   "dependencies": [],
   "codeowners": [
-    "@rospogrigio", "@postlund", "@MaximumSU"
+    "@rospogrigio", "@postlund", "@MaximumSU","@xZetsubou"
   ],
   "issue_tracker": "https://github.com/MaximumSU/localtuya/issues",
   "requirements": [],

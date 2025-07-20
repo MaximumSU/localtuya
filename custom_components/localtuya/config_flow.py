@@ -93,7 +93,7 @@ CONFIGURE_DEVICE_SCHEMA = vol.Schema(
         vol.Required(CONF_HOST): str,
         vol.Required(CONF_DEVICE_ID): str,
         vol.Required(CONF_PROTOCOL_VERSION, default="3.3"): vol.In(
-            ["3.1", "3.2", "3.3", "3.4"]
+            ["3.1", "3.2", "3.3", "3.4","3.5"]
         ),
         vol.Required(CONF_ENABLE_DEBUG, default=False): bool,
         vol.Optional(CONF_SCAN_INTERVAL): int,
@@ -109,7 +109,7 @@ DEVICE_SCHEMA = vol.Schema(
         vol.Required(CONF_DEVICE_ID): cv.string,
         vol.Required(CONF_LOCAL_KEY): cv.string,
         vol.Required(CONF_PROTOCOL_VERSION, default="3.3"): vol.In(
-            ["3.1", "3.2", "3.3", "3.4"]
+            ["3.1", "3.2", "3.3", "3.4","3.5"]
         ),
         vol.Required(CONF_ENABLE_DEBUG, default=False): bool,
         vol.Optional(CONF_SCAN_INTERVAL): int,
@@ -163,7 +163,7 @@ def options_schema(entities):
             vol.Required(CONF_HOST): cv.string,
             vol.Required(CONF_LOCAL_KEY): cv.string,
             vol.Required(CONF_PROTOCOL_VERSION, default="3.3"): vol.In(
-                ["3.1", "3.2", "3.3", "3.4"]
+                ["3.1", "3.2", "3.3", "3.4","3.5"]
             ),
             vol.Required(CONF_ENABLE_DEBUG, default=False): bool,
             vol.Optional(CONF_SCAN_INTERVAL): int,
